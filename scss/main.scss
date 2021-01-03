@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-section{
+      width: 68%;
+      height: 100vh;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+        
+    
+
+    .left-section{
+        flex:27%;
+        max-width: 300px;
+        display: flex;
+        background-color: green;
+        margin:1px;
+    }
+    .middle-section{
+        flex:40%;
+        max-width: 580px;
+        display: flex;
+        background-color: green;
+        margin:1px;
+    }
+    .right-section{
+        flex:24%;
+        max-width: 380px;
+        display: flex;
+        background-color: green;
+        margin:1px;
+    }
+
+  }
+
+ 
+  @media only screen and (max-width: 1679px){
+    .main-section{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+}
+
+    @media only screen and (max-width: 1430px){
+    .main-section{
+       padding-left:20px;
+      
+
+        .left-section{
+            flex:27%;
+            max-width: 25%;
+        }
+        .middle-section{
+            flex:40%;
+            max-width: 66%;
+        }
+        .right-section{
+            flex:24%;
+            max-width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1281px){
+    .main-section{
+
+        .left-section{
+            flex:10%;
+            max-width: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1005px){
+    .main-section{
+        display: flex;
+        justify-content: center;
+
+        .right-section{
+            display: none;
+        }
+        .middle-section{
+            
+            flex:50%;
+            min-width: 80%;
+        }
+        .left-section{
+            flex:15%;
+            min-width: 100px;
+        }
+       
+    }
+}
